@@ -40,7 +40,7 @@ export default function MyApp(props) {
       <Head>
         <meta name='viewport' content='initial-scale=1, width=device-width' />
       </Head>
-      {/* <AppProvider> */}
+      <AppProvider>
         <AppAuthProvider>
           <SettingsProvider>
             {/* <AuthProvider> */}
@@ -50,7 +50,7 @@ export default function MyApp(props) {
             {/* </AuthProvider> */}
           </SettingsProvider>
         </AppAuthProvider>
-      {/* </AppProvider> */}
+      </AppProvider>
     </CacheProvider>
   );
 }

@@ -1,6 +1,8 @@
 import { createContext, useEffect, useState } from "react";
 
-// const [wallet, setWallet] = useState()
+const initialState = {
+    wallet: 1234
+}
 
 const AppContext = createContext()
 
@@ -9,7 +11,7 @@ const AppContext = createContext()
 // }
 
 function AppProvider ({children}) {
-    <AppContext.Provider>
+    <AppContext.Provider value={{wallet: initialState.wallet}}>
         {children}
     </AppContext.Provider>
 }
